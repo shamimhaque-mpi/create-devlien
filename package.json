@@ -1,0 +1,39 @@
+{
+  "name": "create-devlien",
+  "version": "1.0.0",
+  "description": "Devlien framework installer",
+  "main": "index.js",
+  "bin": {
+    "create-devlien": "./index.js"
+  },
+  "scripts": {},
+  "keywords": [
+    "nodejs",
+    "framework",
+    "mvc",
+    "devlien",
+    "backend",
+    "routing",
+    "orm",
+    "expressive",
+    "lightweight",
+    "no-dependencies",
+    "minimal",
+    "node-framework",
+    "controller",
+    "service",
+    "model",
+    "middleware",
+    "rest-api",
+    "pure-nodejs"
+  ],
+  "author": {
+    "name": "Shamim Haque",
+    "email": "shamim.haque.dev@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shamimhaque-mpi/devlien/issues"
+  },
+  "homepage": "https://github.com/shamimhaque-mpi/devlien#readme"
+}

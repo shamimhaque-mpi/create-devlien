@@ -7,6 +7,10 @@
     "create-devlien": "./index.js"
   },
   "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shamimhaque-mpi/create-devlien.git"
+  },
   "keywords": [
     "nodejs",
     "framework",

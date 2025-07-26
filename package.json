@@ -1,10 +1,11 @@
 {
   "name": "create-devlien",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Devlien framework installer",
   "main": "index.js",
+  "type": "module",
   "bin": {
-    "create-devlien": "./index.js"
+    "create-devlien": "./bin/app.js"
   },
   "scripts": {},
   "repository": {

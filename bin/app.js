@@ -52,25 +52,22 @@ terminal.readline(`App version (${config.version}) : `)
 
 function createDevlien (_config){
 
-    terminal.addLine(`Creating Devlien app in ${appName} @space PROCESSING`);
+    terminal.addLine(`Initializing package.json @space PROCESSING`);
     fs.mkdirSync(appName);
     process.chdir(appName);
 
-    // Init package.json silently
     execSync("npm init -y", { stdio: "ignore" });
     const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
     pkg.name = _config.name;
     pkg.version = _config.version;
     pkg.description = _config.description;
     fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2));
+    terminal.addLine(`Initializing package.json @space PROCESSING`, 'success');
 
 
     terminal.addLine(`Devlien is installing @space INSTALLING`);
     execSync("npm install devlien", { stdio: "inherit" });
     terminal.reload();
     terminal.addLine(`Devlien has been installed @space INSTALLED`, 'success');
-
-
-    execSync("npx devlien setup --init", { stdio: "inherit" });
-    terminal.addLine(`Created Devlien app in ${appName} @space DONE`, 'success');
+    execSync("npx devlien setup --init --installer", { stdio: "inherit" });
 }

@@ -1,10 +1,13 @@
 import readline from "readline";
-
+import colours from "./Color.js";
 export default class Terminal {
 
     UPDATE_INDEX;
     #STORAGE = [];
-    COLORS = { processing: '\x1b[33m%s\x1b[0m', success: '\x1b[32m%s\x1b[0m' };
+    COLORS = { 
+        processing: colours.info, 
+        success: colours.success 
+    };
 
 
     addLine(text, type = 'processing') 
